@@ -4,8 +4,7 @@ Welcome to the **UniversityProgramAndCourse** repository! This project aims to p
 
 ## 📚 Project Overview
 
-Энэхүү репозитор нь МУИС-ийн хичээл, сургалтын хөтөлбөртэй холбоотой өгөгдлийг Protege, Karma болон GraphDB програм хангамжуудыг ашиглан боловсруулж, семантик өгөгдлийн системд оруулах боломжийг
-танилцууллаа.
+This repository presents the opportunity to process data related to the courses and educational programs of the National University of Mongolia using Protege, Karma, and GraphDB software, and incorporate it into a semantic data system.
 
 
 ### Installation
