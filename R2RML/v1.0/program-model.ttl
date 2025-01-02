@@ -1,0 +1,756 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1ig8q7easx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "program.csv" ;
+	km-dev:modelPublicationTime "1735462730076"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Харьяалах_нэгжийн_дугаар\"}],[{\"columnName\":\"Харьяалах_нэгжийн_нэр\"}],[{\"columnName\":\"Хөтөлбөрийн_индекс\"}],[{\"columnName\":\"Хөтөлбөрийн_монгол_нэр\"}],[{\"columnName\":\"Хөтөлбөрийн_англи_нэр\"}],[{\"columnName\":\"Академик_түвшин\"}],[{\"columnName\":\"Хөтөлбөрийн_дугаар\"}],[{\"columnName\":\"Батлагдсан_он\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Харьяалах_нэгжийн_дугаар\"}],[{\"columnName\":\"Харьяалах_нэгжийн_нэр\"}],[{\"columnName\":\"Хөтөлбөрийн_индекс\"}],[{\"columnName\":\"Хөтөлбөрийн_монгол_нэр\"}],[{\"columnName\":\"Хөтөлбөрийн_англи_нэр\"}],[{\"columnName\":\"Академик_түвшин\"}],[{\"columnName\":\"Хөтөлбөрийн_дугаар\"}],[{\"columnName\":\"Батлагдсан_он\"}]]" ;
+	km-dev:hasModelLabel "program.csv" ;
+	km-dev:hasBaseURI "http://numdata.mn/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://numdata.mn/source/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Хөтөлбөрийн_дугаар\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/ontologies#hutulbur\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/ontologies#hutulbur1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/ontologies#hutulbur\",
+                    \"DomainId\": \"http://www.semanticweb.org/ontologies#hutulbur1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/ontologies#hutulbur/hutulbur1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Хөтөлбөрийн_дугаар\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Хөтөлбөрийн_дугаар\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Хөтөлбөрийн_индекс\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/ontologies#hutulbur\",
+                    \"DomainId\": \"http://www.semanticweb.org/ontologies#hutulbur1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.num-data-2024#hutulburiin_index\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/ontologies#hutulbur/hutulbur1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Хөтөлбөрийн_индекс\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Хөтөлбөрийн_индекс\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Хөтөлбөрийн_монгол_нэр\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/ontologies#hutulbur\",
+                    \"DomainId\": \"http://www.semanticweb.org/ontologies#hutulbur1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.num-data-2024#hutulburiin_ner_mn\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/ontologies#hutulbur/hutulbur1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Хөтөлбөрийн_монгол_нэр\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Хөтөлбөрийн_монгол_нэр\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Хөтөлбөрийн_англи_нэр\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/ontologies#hutulbur\",
+                    \"DomainId\": \"http://www.semanticweb.org/ontologies#hutulbur1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.num-data-2024#hutulburiin_ner_eng\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/ontologies#hutulbur/hutulbur1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Хөтөлбөрийн_англи_нэр\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Хөтөлбөрийн_англи_нэр\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Академик_түвшин\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/ontologies#hutulbur\",
+                    \"DomainId\": \"http://www.semanticweb.org/ontologies#hutulbur1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.num-data-2024#hutulburiin_academic_tuvshin\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/ontologies#hutulbur/hutulbur1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Академик_түвшин\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Академик_түвшин\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Харьяалах_нэгжийн_дугаар\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/ontologies#salbar_surguuli\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/ontologies#salbar_surguuli1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/ontologies#salbar_surguuli\",
+                    \"DomainId\": \"http://www.semanticweb.org/ontologies#salbar_surguuli1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/ontologies#salbar_surguuli/salbar_surguuli1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Харьяалах_нэгжийн_дугаар\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Харьяалах_нэгжийн_дугаар\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Харьяалах_нэгжийн_нэр\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/ontologies#salbar_surguuli\",
+                    \"DomainId\": \"http://www.semanticweb.org/ontologies#salbar_surguuli1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.num-data-2024#surguuliin_ner\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/ontologies#salbar_surguuli/salbar_surguuli1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Харьяалах_нэгжийн_нэр\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Харьяалах_нэгжийн_нэр\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Батлагдсан_он\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/ontologies#hutulbur\",
+                    \"DomainId\": \"http://www.semanticweb.org/ontologies#hutulbur1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.num-data-2024#hutulbur_batlagdsan_ognoo\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/ontologies#hutulbur/hutulbur1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Батлагдсан_он\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Батлагдсан_он\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/ontologies#hutulbur1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/ontologies#hutulbur\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/ontologies#salbar_surguuli1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/ontologies#salbar_surguuli\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_0161fc73-4d1d-4c7f-86a8-140c37994684 a rr:TriplesMap .
+
+_:node1ig8q7easx1 km-dev:hasTriplesMap km-dev:TriplesMap_0161fc73-4d1d-4c7f-86a8-140c37994684 .
+
+km-dev:TriplesMap_0161fc73-4d1d-4c7f-86a8-140c37994684 km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx2 rr:tableName "program.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasLogicalTable _:node1ig8q7easx2 .
+
+km-dev:TriplesMap_0161fc73-4d1d-4c7f-86a8-140c37994684 rr:logicalTable _:node1ig8q7easx2 ;
+	rr:subjectMap _:node1ig8q7easx3 .
+
+_:node1ig8q7easx1 km-dev:hasSubjectMap _:node1ig8q7easx3 .
+
+_:node1ig8q7easx3 km-dev:isPartOfMapping _:node1ig8q7easx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/ontologies#salbar_surguuli1" ;
+	rr:class <http://www.semanticweb.org/ontologies#salbar_surguuli> ;
+	rr:template "{Харьяалах_нэгжийн_дугаар}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_883b4fdd-a119-4557-b936-fc47cd885136 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_4a9d60a1-3deb-45ea-8c35-6bc5551bf6d2 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_0d96cbb6-4fed-4059-9c34-4d3da0aed576 ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasObjectMap km-dev:RefObjectMap_4a9d60a1-3deb-45ea-8c35-6bc5551bf6d2 .
+
+km-dev:PredicateObjectMap_883b4fdd-a119-4557-b936-fc47cd885136 rr:objectMap km-dev:RefObjectMap_4a9d60a1-3deb-45ea-8c35-6bc5551bf6d2 .
+
+km-dev:TriplesMap_0161fc73-4d1d-4c7f-86a8-140c37994684 rr:predicateObjectMap km-dev:PredicateObjectMap_883b4fdd-a119-4557-b936-fc47cd885136 .
+
+km-dev:PredicateObjectMap_883b4fdd-a119-4557-b936-fc47cd885136 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_883b4fdd-a119-4557-b936-fc47cd885136 .
+
+km-dev:PredicateObjectMap_23c73f9b-3407-431f-a31f-cff58c25e9ca rr:predicate <http://www.num-data-2024#surguuliin_ner> .
+
+_:node1ig8q7easx4 rr:column "Харьяалах_нэгжийн_нэр" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasObjectMap _:node1ig8q7easx4 .
+
+km-dev:PredicateObjectMap_23c73f9b-3407-431f-a31f-cff58c25e9ca rr:objectMap _:node1ig8q7easx4 .
+
+km-dev:TriplesMap_0161fc73-4d1d-4c7f-86a8-140c37994684 rr:predicateObjectMap km-dev:PredicateObjectMap_23c73f9b-3407-431f-a31f-cff58c25e9ca .
+
+km-dev:PredicateObjectMap_23c73f9b-3407-431f-a31f-cff58c25e9ca a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_23c73f9b-3407-431f-a31f-cff58c25e9ca .
+
+km-dev:TriplesMap_0d96cbb6-4fed-4059-9c34-4d3da0aed576 a rr:TriplesMap .
+
+_:node1ig8q7easx1 km-dev:hasTriplesMap km-dev:TriplesMap_0d96cbb6-4fed-4059-9c34-4d3da0aed576 .
+
+km-dev:TriplesMap_0d96cbb6-4fed-4059-9c34-4d3da0aed576 km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx5 rr:tableName "program.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasLogicalTable _:node1ig8q7easx5 .
+
+km-dev:TriplesMap_0d96cbb6-4fed-4059-9c34-4d3da0aed576 rr:logicalTable _:node1ig8q7easx5 ;
+	rr:subjectMap _:node1ig8q7easx6 .
+
+_:node1ig8q7easx1 km-dev:hasSubjectMap _:node1ig8q7easx6 .
+
+_:node1ig8q7easx6 km-dev:isPartOfMapping _:node1ig8q7easx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/ontologies#hutulbur1" ;
+	rr:class <http://www.semanticweb.org/ontologies#hutulbur> ;
+	rr:template "{Хөтөлбөрийн_дугаар}" .
+
+km-dev:PredicateObjectMap_506b0c71-76ee-4083-9d90-e6fa7a581814 rr:predicate <http://www.num-data-2024#hutulburiin_index> .
+
+_:node1ig8q7easx7 rr:column "Хөтөлбөрийн_индекс" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasObjectMap _:node1ig8q7easx7 .
+
+km-dev:PredicateObjectMap_506b0c71-76ee-4083-9d90-e6fa7a581814 rr:objectMap _:node1ig8q7easx7 .
+
+km-dev:TriplesMap_0d96cbb6-4fed-4059-9c34-4d3da0aed576 rr:predicateObjectMap km-dev:PredicateObjectMap_506b0c71-76ee-4083-9d90-e6fa7a581814 .
+
+km-dev:PredicateObjectMap_506b0c71-76ee-4083-9d90-e6fa7a581814 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_506b0c71-76ee-4083-9d90-e6fa7a581814 .
+
+km-dev:PredicateObjectMap_4e2b4037-9426-449f-ace5-0b5f484cb44c rr:predicate <http://www.num-data-2024#hutulburiin_ner_mn> .
+
+_:node1ig8q7easx8 rr:column "Хөтөлбөрийн_монгол_нэр" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasObjectMap _:node1ig8q7easx8 .
+
+km-dev:PredicateObjectMap_4e2b4037-9426-449f-ace5-0b5f484cb44c rr:objectMap _:node1ig8q7easx8 .
+
+km-dev:TriplesMap_0d96cbb6-4fed-4059-9c34-4d3da0aed576 rr:predicateObjectMap km-dev:PredicateObjectMap_4e2b4037-9426-449f-ace5-0b5f484cb44c .
+
+km-dev:PredicateObjectMap_4e2b4037-9426-449f-ace5-0b5f484cb44c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4e2b4037-9426-449f-ace5-0b5f484cb44c .
+
+km-dev:PredicateObjectMap_c16a6072-038a-4f62-866c-ae2844a706af rr:predicate <http://www.num-data-2024#hutulburiin_ner_eng> .
+
+_:node1ig8q7easx9 rr:column "Хөтөлбөрийн_англи_нэр" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasObjectMap _:node1ig8q7easx9 .
+
+km-dev:PredicateObjectMap_c16a6072-038a-4f62-866c-ae2844a706af rr:objectMap _:node1ig8q7easx9 .
+
+km-dev:TriplesMap_0d96cbb6-4fed-4059-9c34-4d3da0aed576 rr:predicateObjectMap km-dev:PredicateObjectMap_c16a6072-038a-4f62-866c-ae2844a706af .
+
+km-dev:PredicateObjectMap_c16a6072-038a-4f62-866c-ae2844a706af a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c16a6072-038a-4f62-866c-ae2844a706af .
+
+km-dev:PredicateObjectMap_d17f09e9-da02-48d3-95af-b2ff6838c6f5 rr:predicate <http://www.num-data-2024#hutulburiin_academic_tuvshin> .
+
+_:node1ig8q7easx10 rr:column "Академик_түвшин" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasObjectMap _:node1ig8q7easx10 .
+
+km-dev:PredicateObjectMap_d17f09e9-da02-48d3-95af-b2ff6838c6f5 rr:objectMap _:node1ig8q7easx10 .
+
+km-dev:TriplesMap_0d96cbb6-4fed-4059-9c34-4d3da0aed576 rr:predicateObjectMap km-dev:PredicateObjectMap_d17f09e9-da02-48d3-95af-b2ff6838c6f5 .
+
+km-dev:PredicateObjectMap_d17f09e9-da02-48d3-95af-b2ff6838c6f5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d17f09e9-da02-48d3-95af-b2ff6838c6f5 .
+
+km-dev:PredicateObjectMap_0ed6d7c9-fb84-406e-8f2b-c60aa4d6f486 rr:predicate <http://www.num-data-2024#hutulbur_batlagdsan_ognoo> .
+
+_:node1ig8q7easx11 rr:column "Батлагдсан_он" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasObjectMap _:node1ig8q7easx11 .
+
+km-dev:PredicateObjectMap_0ed6d7c9-fb84-406e-8f2b-c60aa4d6f486 rr:objectMap _:node1ig8q7easx11 .
+
+km-dev:TriplesMap_0d96cbb6-4fed-4059-9c34-4d3da0aed576 rr:predicateObjectMap km-dev:PredicateObjectMap_0ed6d7c9-fb84-406e-8f2b-c60aa4d6f486 .
+
+km-dev:PredicateObjectMap_0ed6d7c9-fb84-406e-8f2b-c60aa4d6f486 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ig8q7easx1 .
+
+_:node1ig8q7easx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0ed6d7c9-fb84-406e-8f2b-c60aa4d6f486 .

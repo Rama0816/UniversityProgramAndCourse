@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.numdata.mn/source/"
+     xml:base="http://www.numdata.mn/source/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies#hutulbur_hicheel_aguulna -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies#hutulbur_hicheel_aguulna">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hutulbur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies#hicheel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies#surguuli_tenhim_aguulna -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies#surguuli_tenhim_aguulna">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#salbar_surguuli"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies#tenhim"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies#tenhim_hutulbur_aguulna -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies#tenhim_hutulbur_aguulna">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#tenhim"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies#hutulbur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hicheel"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.num-data-2024#hicheeliin_bagts_tsag -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#hicheeliin_bagts_tsag">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hicheel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#hicheeliin_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#hicheeliin_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hicheel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#hicheeliin_index -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#hicheeliin_index">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hicheel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#hicheeliin_ner_eng -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#hicheeliin_ner_eng">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hicheel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#hicheeliin_ner_mn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#hicheeliin_ner_mn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hicheel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#hicheeliin_oroh_uliral -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#hicheeliin_oroh_uliral">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hicheel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#hicheeliin_surgaltiin_tuvshin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#hicheeliin_surgaltiin_tuvshin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hicheel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#hicheeliin_todorhoilson_ognoo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#hicheeliin_todorhoilson_ognoo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hicheel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#hutulbur_batlagdsan_ognoo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#hutulbur_batlagdsan_ognoo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hutulbur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#hutulburiin_academic_tuvshin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#hutulburiin_academic_tuvshin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hutulbur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#hutulburiin_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#hutulburiin_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hutulbur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#hutulburiin_index -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#hutulburiin_index">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hutulbur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#hutulburiin_ner_eng -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#hutulburiin_ner_eng">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hutulbur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#hutulburiin_ner_mn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#hutulburiin_ner_mn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#hutulbur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#surguuliin_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#surguuliin_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#salbar_surguuli"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#surguuliin_ner -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#surguuliin_ner">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#salbar_surguuli"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#tenhimiin_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#tenhimiin_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#tenhim"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.num-data-2024#tenhimiin_ner -->
+
+    <owl:DatatypeProperty rdf:about="http://www.num-data-2024#tenhimiin_ner">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies#tenhim"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies#hicheel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies#hicheel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies#hutulbur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies#hutulbur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies#hutulbur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies#tenhim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies#salbar_surguuli -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies#salbar_surguuli"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies#tenhim -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies#tenhim">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies#salbar_surguuli"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
